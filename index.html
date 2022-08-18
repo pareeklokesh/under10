@@ -194,7 +194,7 @@
 
   <div class="w-100 position-relative">
     <img class="w-100" src="assets/img/banner.png" />
-    <div class="bannerbutton" style="position: relative;">
+    <!-- <div class="bannerbutton" style="position: relative;">
     <div class="" style="position: relative;">
   <input type="number" id="mob-number" name="" placeholder="Enter mobile number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
   <span class="numbertext">+91</span>
@@ -203,7 +203,7 @@
   <button class="getbutton-mobile"><img style="width: 30px;margin-right: 10px;" src="assets/img/and.png"> Download Now</button>
   <a href="#" class="iphone-show"><img src="assets/img/apple-store-badge-de.png" /></a>
   <span class="link-sent" style="display: none;">We have sent the Dhamaalgame App Download link to 9500000000. Check your phone now!</span>
-</div>
+</div> -->
   </div>
 
   <div class="w-100">
@@ -338,35 +338,65 @@
     <div class="container">
       
       <h2 class="text-center section-title" style="margin-bottom: 64px;">Recognised by 9 Crore+ Indians</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="w-100 testimonial text-center">
-              <img src="assets/img/user_epicenter-satish.png" />
-              <h2>Sathish</h2>
-              <span>Faridabad, Haryana</span>
-              <h3>Won ₹11 Lakh</h3>
-              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="w-100 testimonial text-center">
-              <img src="assets/img/user_epicenter-satish.png" />
-              <h2>Sathish</h2>
-              <span>Faridabad, Haryana</span>
-              <h3>Won ₹11 Lakh</h3>
-              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="w-100 testimonial text-center">
-              <img src="assets/img/user_epicenter-satish.png" />
-              <h2>Sathish</h2>
-              <span>Faridabad, Haryana</span>
-              <h3>Won ₹11 Lakh</h3>
-              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
-          </div>
-        </div>
+      <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="testimonial-slide owl-carousel owl-theme">
+        
+          <div class="item">
+            <div class="testimonial">
+                    <div class="pic">
+                               <img class="m-0" src="assets/img/user.png">
+                    </div>
+                    <p class="description">Hassle free withdraw, get immediate approval on request. Game is smooth and in good way.</p>
+                    <h3 class="title">Niket</h3>
+                </div>
+                
+
+              </div>
+              <div class="item">
+            <div class="testimonial">
+                    <div class="pic">
+                               <img class="m-0" src="assets/img/user.png">
+                    </div>
+                    <p class="description">Air ludo have multiple variant available, i have played almost all. Game is fine, love to play.</p>
+                    <h3 class="title">Siridhar</h3>
+                </div>
+                
+
+              </div>
+            </div>
       </div>
+    </div>
+
+      <!-- <div class="row">
+        <div class="col-md-4">
+          <div class="w-100 testimonial text-center">
+              <img src="assets/img/user_epicenter-satish.png" />
+              <h2>Sathish</h2>
+              <span>Faridabad, Haryana</span>
+              <h3>Won ₹11 Lakh</h3>
+              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="w-100 testimonial text-center">
+              <img src="assets/img/user_epicenter-satish.png" />
+              <h2>Sathish</h2>
+              <span>Faridabad, Haryana</span>
+              <h3>Won ₹11 Lakh</h3>
+              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="w-100 testimonial text-center">
+              <img src="assets/img/user_epicenter-satish.png" />
+              <h2>Sathish</h2>
+              <span>Faridabad, Haryana</span>
+              <h3>Won ₹11 Lakh</h3>
+              <p class="mb-0">Under10 encouraged me to nurture my hidden talent and knowledge about cricket. I not only won money but also got an opportunity to meet Virat Kohli. For success, I research players’ performance and then make my team. I would urge others also to participate and play games on Under10.</p>
+          </div>
+        </div>
+      </div> -->
       
     </div>
   </div>
@@ -887,6 +917,24 @@
 
 
 
+</script>
+
+<script>
+  jQuery(document).ready(function($) {
+              $('.testimonial-slide').owlCarousel({
+                center: true,
+                items: 1,
+                loop: true,
+                margin: 10,autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+                responsive: {
+                  600: {
+                    items: 1
+                  }
+                }
+              });
+              });
 </script>
 
 </body>
