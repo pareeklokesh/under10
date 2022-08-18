@@ -932,7 +932,7 @@ margin-top: 0 !important;
   position: relative;
    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
-  border: 5px solid rgba(0, 0, 0, 0.07);
+  border: 5px solid #310813;
   background: #fff;
 }
 .testimonial-slide {
@@ -960,7 +960,7 @@ margin-top: 0 !important;
 height: 100px;
 margin: 0 auto;
 padding: 5px;
-border: 1px solid #ddd;
+border: 1px solid #310813;
 border-radius: 50%;
 }
 .testimonial-slide .owl-nav button.owl-next {
@@ -973,7 +973,7 @@ border-radius: 50%;
 .carousel-line {
   height: 1px;
   width: 70%;
-  background-color: #cecece;
+  background-color: #310813;
   margin: auto;
 }
 .testimonial .pic img {
