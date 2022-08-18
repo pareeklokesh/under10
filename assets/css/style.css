@@ -555,7 +555,7 @@ font-size: 20px !important;
 
 }
 .header {
-  background: #000;
+  background: #310813;
   padding-top: 5px;
   padding-bottom: 5px;
   position: relative;
@@ -564,7 +564,7 @@ font-size: 20px !important;
 .header .navbar-nav li.help-nav a {
   border-radius: 50px;
   padding: 8px 40px;
-  border: 2px solid #f9cb2b;
+  border: 2px solid #fff;
   color: #fff !important;
   background: transparent;
 }
@@ -922,4 +922,65 @@ margin-top: 0 !important;
   .dis-blocad {
     display: none;
   }
+}
+
+
+.testimonial {
+  padding: 70px 30px 50px;
+  margin: 50px 30px 30px;
+  border: 1px solid #310813;
+  position: relative;
+  background: #e1dcdc;
+}
+.testimonial .pic {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 5px solid #310813;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.testimonial .pic img {
+  width: 100%;
+  padding: 0;height: auto !important;
+}
+.testimonial .description {
+  line-height: 27px;
+  text-align: center;
+  margin: 0;
+  position: relative;padding-left: 10px;
+}
+.testimonial .title {
+  display: inline-table;
+  padding: 10px;
+  margin: 0 auto;
+  background: #310813;
+  border: 1px solid #310813;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+}
+.testimonial .description::before {
+  content: "\f10d";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-weight: 900;
+  font-size: 25px;
+  color: #d7d7d7;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.testimonial .owl-stage-outer, .testimonial .owl-stage, .testimonial .owl-item {
+  position: static !important;
 }
