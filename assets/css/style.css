@@ -107,7 +107,7 @@ height: 120px;
 }
 .space-upi {
   padding: 0 40px;
-  margin-top: 64px;
+  margin-top: 20px;
 }
 .section-title {
   font-size: 48px;
@@ -116,7 +116,7 @@ height: 120px;
   font-family: 'Trim-SemiBold';
 }
 .section-margin {
-  margin: 140px 0;
+  margin: 100px 0;
 }
 .loop .item img , .imgredius{border-radius: 16px;}
 .loop .owl-dot {
