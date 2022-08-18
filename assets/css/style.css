@@ -1062,8 +1062,8 @@ margin-top: 0 !important;
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #310813;
-  color: #fff;
+  background: #fdc72a;
+  color: #310813;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1072,6 +1072,7 @@ margin-top: 0 !important;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  line-height: normal;
 }
 .copyright {
   padding: 0;
@@ -1087,6 +1088,9 @@ margin-top: 0 !important;
 }
 .owl-dots {
   display: none;
+}
+.copyright {
+  color: #fff;
 }
 
 
