@@ -198,8 +198,13 @@
 
   <!-- Header End -->
 
-  <div class="w-100 position-relative">
+  <div class="banner-slide w-100 position-relative owl-carousel owl-theme">
+    <div class="item">
     <img class="w-100" src="assets/img/banner.png" />
+  </div>
+  <div class="item">
+    <img class="w-100" src="assets/img/banner2.png" />
+  </div>
     <!-- <div class="bannerbutton" style="position: relative;">
     <div class="" style="position: relative;">
   <input type="number" id="mob-number" name="" placeholder="Enter mobile number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
@@ -927,7 +932,7 @@
 
 <script>
   jQuery(document).ready(function($) {
-              $('.testimonial-slide').owlCarousel({
+              $('.testimonial-slide, .banner-slide').owlCarousel({
                 center: true,
                 items: 1,
                 loop: true,
@@ -942,6 +947,5 @@
               });
               });
 </script>
-
 </body>
 </html>
