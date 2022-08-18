@@ -926,61 +926,71 @@ margin-top: 0 !important;
 
 
 .testimonial {
-  padding: 70px 30px 50px;
-  margin: 50px 30px 30px;
+  padding: 30px 25px;
+  margin: 30px 30px;
   border: 1px solid #310813;
   position: relative;
-  background: #e1dcdc;
+   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  background: #fff;
 }
+.testimonial-slide {
+  position: static !important;
+}
+.testimonial-slide .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+}
+.testimonial-slide .owl-nav button {
+  width: 60px;
+  height: 60px;
+  background: url('../img/left.png') no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  opacity: 0.5;transition: all .4s linear;
+}
+.testimonial-slide .owl-nav button span {display: none;}
 .testimonial .pic {
   width: 100px;
-  height: 100px;
-  margin-top: 50px;
-  border-radius: 50%;
-  border: 5px solid #310813;
-  overflow: hidden;
-  margin: 0 auto;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  right: 0;
+height: 100px;
+margin: 0 auto;
+padding: 5px;
+border: 1px solid #ddd;
+border-radius: 50%;
+}
+.testimonial-slide .owl-nav button.owl-next {
+  float: right;
+  transform: rotate(180deg);
+}
+.testimonial-slide .owl-nav button:hover {
+  opacity: 1;
+}
+.carousel-line {
+  height: 1px;
+  width: 70%;
+  background-color: #cecece;
+  margin: auto;
 }
 .testimonial .pic img {
   width: 100%;
   padding: 0;height: auto !important;
 }
 .testimonial .description {
-  line-height: 27px;
-  text-align: center;
-  margin: 0;
-  position: relative;padding-left: 10px;
+  padding: 30px 0 10px;
+color: #555;
+font-size: 18px;
+line-height: 26px;margin: 0;
 }
 .testimonial .title {
-  display: inline-table;
-  padding: 10px;
-  margin: 0 auto;
-  background: #310813;
-  border: 1px solid #310813;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  right: 0;
+  color: #310813;
+font-size: 21px;
 }
-.testimonial .description::before {
-  content: "\f10d";
-  font: normal normal normal 14px/1 FontAwesome;
-  font-weight: 900;
-  font-size: 25px;
-  color: #d7d7d7;
-  position: absolute;
-  top: 0;
-  left: -20px;
-}
+
 .testimonial .owl-stage-outer, .testimonial .owl-stage, .testimonial .owl-item {
   position: static !important;
 }
