@@ -1005,6 +1005,7 @@ font-size: 21px;
   padding: 6px 32px 7px;
   transition: all 0.3s ease 0s;
   text-align: center;
+  color: #310813 !important;
 }
 .banner-slide .owl-nav {
   display: block !important;
