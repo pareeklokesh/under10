@@ -20,9 +20,9 @@
 body {
   font-family: 'Trim-Regular';
 }
-.header .navbar, .header .col-md-12, .header .row, .header .container, .header .nav-item.dropdown {
+/*.header .navbar, .header .col-md-12, .header .row, .header .container, .header .nav-item.dropdown {
   position: static;
-}
+}*/
 .header {
   position: relative;
 }
@@ -1119,6 +1119,19 @@ font-size: 21px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: aitf 80s linear infinite;
+}
+.header .navbar-nav li .dropdown-menu.show {
+  background: #310813;
+  border: 0 !important;
+}
+.header .navbar-nav li .dropdown-menu.show li a {
+  margin: 0;
+  padding: 5px 21px;
+  font-size: 16px !important;transition: 0.3s linear;
+}
+.header .navbar-nav li .dropdown-menu.show li a:hover {
+  background: #fbc128;
+  color: #310813 !important;
 }
 
 
