@@ -1162,6 +1162,50 @@ font-size: 21px;
 .legal_contnettext .list {
   padding-left: 15px;
 }
+.contactform .cn_bold2 {
+  font-size: 20px;
+  color: #310813;
+  padding: 0 0 20px 0;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  margin: 0;
+}
+.legal_contnettext label.cn_regular {
+  margin: 10px 0;
+}
+.dels {
+  padding: 135px 0 0 56px;
+}
+.contactform {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 45px;
+}
+.contactform .dels .cn_regular {
+  margin: 0;
+  font-size: 19px;
+}
+.contactform #complaint_submit {
+  border: 0;
+  border-radius: 7px;
+  background-color: #310813;
+  margin-top: 13px;
+  color: #fff;
+  padding: 9px 26px;
+  font-family: "Segoe UI";
+}
+.exclusive-title {
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.contentall {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  color: #000;
+  line-height: 26px;
+}
 
 
 @media (max-width: 767px) {
@@ -1180,4 +1224,8 @@ font-size: 21px;
 .banner-slide .owl-nav {
   top: 20%;
 }
+.dels {
+  padding: 25px 0 0 15px;
+}
+
 }
