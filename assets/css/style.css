@@ -1133,6 +1133,35 @@ font-size: 21px;
   background: #fbc128;
   color: #310813 !important;
 }
+.legal_contnet {
+  margin-top: 60px;
+}
+.legal_contnet .section-title {
+  margin-bottom: 40px;
+}
+.legal_contnettext .cn_regular {
+  color: #000;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: "Segoe UI";
+}
+.sub_head {
+  font-size: 21px;
+  color: #310813;
+  padding-bottom: 10px;
+  font-family: "Segoe UI";
+  font-weight: 700;
+}
+.legal_contnettext .list li {
+  color: #000;
+  list-style-type: circle;
+  font-size: 16px !important;
+  font-family: "Segoe UI";
+  text-transform: lowercase;
+}
+.legal_contnettext .list {
+  padding-left: 15px;
+}
 
 
 @media (max-width: 767px) {
