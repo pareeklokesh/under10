@@ -995,17 +995,19 @@ font-size: 21px;
   position: static !important;
 }
 .header .navbar-nav li.downloadbtn a {
-  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
-  transform: perspective(500px) rotateY(-15deg);
-  background: linear-gradient(to right, #fdc72a, #e07013);
-  border-radius: 50px;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
-  padding: 6px 32px 7px;
   transition: all 0.3s ease 0s;
-  text-align: center;
-  color: #310813 !important;
+text-align: center;
+background: #cf570b;
+width: 200px;
+height: 40px;
+border-radius: 45px;
+box-shadow: 0px 8px 15px #000;
+outline: none;
+font-weight: 500 !important;
+font-size: 14px !important;
+font-family: "Segoe UI" !important;
+text-transform: uppercase;
+letter-spacing: 2px;
 }
 .banner-slide .owl-nav {
   display: block !important;
@@ -1223,10 +1225,15 @@ font-size: 21px;
   padding: 40px 20px;
   padding-bottom: 50px;
 }
+.header .navbar-nav li.downloadbtn a:hover {
+  background: #fff;
+  color: #310813 !important;
+}
+
 
 @media (max-width: 991px) {
   .header .navbar-nav li.downloadbtn a {
-    transform: none;
+    width: 100%;
   }
 }
 
