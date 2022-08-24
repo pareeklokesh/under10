@@ -1253,5 +1253,13 @@ font-size: 21px;
 .exclusive .col-md-4 {
   margin-bottom: 20px;
 }
+.testimonial-slide .owl-nav button {
+  width: 30px;
+  height: 30px;
+}
+.testimonial-slide .owl-nav {
+    top: 53%;
+    padding: 0 25px;
+}
 
 }
