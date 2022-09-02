@@ -1229,6 +1229,41 @@ letter-spacing: 2px;
   background: #fff;
   color: #310813 !important;
 }
+.copyrightbtn img {
+  width: 150px;cursor: pointer;
+}
+.copyrightbtn {
+  position: absolute;
+left: 0;
+bottom: 26px;
+z-index: 1;
+}
+.copyrightdocmodal .modal-body {
+  padding: 0;
+}
+.copyrightdocmodal .modal-dialog {
+  max-width: 612px;z-index: 9999999999;border-radius: 8px;
+}
+.copyrightdocmodal .btn-close {
+  position: absolute;
+  box-shadow: none !important;
+  outline: none !important;
+  right: 0;
+  background-color: #fdc72a;
+  opacity: 1;
+  border-radius: 0;
+  width: 25px;
+  height: 25px;border-radius: 0 8px 0 0;
+}
+.copyrightdocmodal {
+  z-index: 9999999999;
+}
+.copyrightdocmodal .modal-dialog img {
+  border-radius: 8px;
+}
+.copyrightdocmodal .modal-dialog .modal-content {
+  background: transparent;
+}
 
 
 @media (max-width: 991px) {
@@ -1269,4 +1304,12 @@ letter-spacing: 2px;
     padding: 0 25px;
 }
 
+}
+@media (max-width: 620px) {
+  .copyrightdocmodal .modal-dialog {
+  max-width: 95%;
+}
+.copyrightbtn img {
+  width: 60px;
+}
 }
