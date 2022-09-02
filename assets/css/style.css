@@ -1313,3 +1313,11 @@ z-index: 1;
   width: 60px;
 }
 }
+@media (max-width: 420px) {
+  .copyrightbtn img {
+  width: 47px;
+}
+.copyrightbtn {
+  bottom: 0;
+}
+}
