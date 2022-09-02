@@ -1264,6 +1264,15 @@ z-index: 1;
 .copyrightdocmodal .modal-dialog .modal-content {
   background: transparent;
 }
+.topgame-content {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Trim-SemiBold';
+  color: #212529;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
 
 
 @media (max-width: 991px) {
