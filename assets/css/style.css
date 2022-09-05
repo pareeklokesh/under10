@@ -594,6 +594,9 @@ padding: 80px 15px;
   background: #fff;
   padding: 30px 15px;
 }
+.legal_contnettext .listhome li {
+  text-transform: inherit !important;
+}
 
 
 
