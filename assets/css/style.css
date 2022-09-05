@@ -880,14 +880,14 @@ margin-top: 0 !important;
   display: block;
   margin-top: 15px;
   margin-bottom: 15px;
-  background: #3f6;
+  background: #310813;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Trim-Bold';
   border: 0;
   padding: 10px 10px;
-  border: 1px solid #f3f2f4;
-  border-radius: 5px;
+  border: 1px solid #310813;
+  border-radius: 5px;color: #fff;
 }
 .bannerbutton input, .getbutton, .numbertext {
   display: none !important;
