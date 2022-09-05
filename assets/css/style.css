@@ -1230,7 +1230,7 @@ letter-spacing: 2px;
   color: #310813 !important;
 }
 .copyrightbtn img {
-  width: 150px;cursor: pointer;
+  width: 120px;cursor: pointer;
 }
 .copyrightbtn {
   position: absolute;
@@ -1274,8 +1274,7 @@ z-index: 1;
   margin-top: 15px;
 }
 .faster {
-  background: #ccc;
-padding: 80px 15px;
+  margin-top: 80px;
 }
 
 
