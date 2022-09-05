@@ -578,6 +578,10 @@ font-size: 20px !important;
   min-height: 55px;
 display: block;
 }
+.listhome li {
+  list-style-type: disc !important;
+  margin-bottom: 15px;
+}
 
 
 
