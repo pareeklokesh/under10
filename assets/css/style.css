@@ -581,6 +581,18 @@ display: block;
 .listhome li {
   list-style-type: disc !important;
   margin-bottom: 15px;
+  color: #fff;
+}
+.underrules {
+  background: url('../img/ludo.png') no-repeat;
+background-position: left top;
+background-size: cover;
+background-attachment: fixed;
+padding: 80px 15px;
+}
+.fieldsetclass fieldset {
+  background: #fff;
+  padding: 30px 15px;
 }
 
 
