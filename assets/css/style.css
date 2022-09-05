@@ -1330,4 +1330,11 @@ z-index: 1;
   left: 4px;
   bottom: 3px;
 }
+.banner-slide .owl-nav {
+  padding: 0 10px;
+}
+.banner-slide .owl-nav button {
+  font-size: 40px !important;
+}
+
 }
