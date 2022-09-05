@@ -1324,9 +1324,10 @@ z-index: 1;
 }
 @media (max-width: 420px) {
   .copyrightbtn img {
-  width: 47px;
+  width: 40px;
 }
 .copyrightbtn {
-  bottom: 0;
+  left: 4px;
+  bottom: 3px;
 }
 }
