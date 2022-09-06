@@ -889,24 +889,29 @@ margin-top: 0 !important;
   bottom: 0;
   width: 100%;
   z-index: 999;
-  background: #fff;
+  background: #310813;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, .3);
+  padding: 10px;display: flex;align-items: center;
+justify-content: space-between;
 }
 .download-footer {
   width: 90%;
-  margin: 0px auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background: #310813;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Trim-Bold';
-  border: 0;
-  padding: 10px 10px;
-  border: 1px solid #310813;
-  border-radius: 5px;color: #fff;
+margin: 0px auto;
+margin-top: 0px;
+margin-bottom: 0px;
+display: block;
+background: #fff;
+text-transform: uppercase;
+font-weight: 600;
+font-family: 'Trim-Bold';
+border: 0;
+padding: 5px 10px;
+border: 1px solid #310813;
+border-radius: 5px;
+color: #310813;
+width: auto;
+float: right;
+font-family: "Segoe UI";
 }
 .bannerbutton input, .getbutton, .numbertext {
   display: none !important;
