@@ -1296,6 +1296,74 @@ z-index: 1;
   background: #ccc;
   padding: 80px 15px;
 }
+.rule_content {
+  background: #fff;
+  height: 100%;
+  padding: 30px 25px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  
+  transition: all 0.5s ease 0s;
+}
+.game_rules .col-md-4 {
+  margin-bottom: 30px;
+}
+.rule_content .list.listhome {
+  padding: 0;
+  margin-bottom: 0;
+}
+.rule_content .list.listhome li {
+  position: relative;
+  list-style: none !important;
+  margin: 0;
+  font-size: 14px !important;
+  text-align: left;
+  padding-left: 18px;
+margin-bottom: 8px;
+color: #212529;
+}
+.rule_content .list.listhome li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 13px;
+  background: url('../img/arrow.png') no-repeat;
+  background-size: contain;
+position: absolute;
+left: 0;
+top: 6px;
+}
+.rule_content .sub_head {
+  margin-bottom: 20px;
+  color: #2f2f2f;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 0;
+}
+
+.rule_content img {
+  width: 60px;
+  margin-bottom: 8px;
+}
+/*.rule_content .game_icon {
+  background: rgb(217 239 223) !important;
+  margin-bottom: 8px;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}*/
+.rule_content:hover {
+  color: #000;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease 0s;
+}
+.game_rules {
+  margin-top: 80px;
+}
 
 
 @media (max-width: 991px) {
