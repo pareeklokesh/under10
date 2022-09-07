@@ -1018,7 +1018,7 @@ font-size: 21px;
 .testimonial .owl-stage-outer, .testimonial .owl-stage, .testimonial .owl-item {
   position: static !important;
 }
-.header .navbar-nav li.downloadbtn a {
+/*.header .navbar-nav li.downloadbtn a {
   transition: all 0.3s ease 0s;
 text-align: center;
 background: #cf570b;
@@ -1032,6 +1032,10 @@ font-size: 14px !important;
 font-family: "Segoe UI" !important;
 text-transform: uppercase;
 letter-spacing: 2px;
+}*/
+.header .navbar-nav li.downloadbtn a {
+  padding: 0 !important;
+  background: transparent !important;
 }
 .banner-slide .owl-nav {
   display: block !important;
@@ -1368,12 +1372,51 @@ top: 6px;
 .game_rules {
   margin-top: 80px;
 }
+.download-footer {
+  display: flex;
+  align-items: center;
+}
+.download-footer img {
+  margin-right: 5px;
+}
+.ios-apple, .android {
+  display: none;
+}
+.header .navbar-nav li.downloadbtn a img {
+  width: 140px;
+}
+@supports (-webkit-touch-callout: none) {
+  .ios-apple {
+  display: block;
+}
+.android {
+  display: none;
+}
+
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .android {
+  display: block;
+}
+.ios-apple {
+  display: none;
+}
+
+}
 
 
 @media (max-width: 991px) {
   .header .navbar-nav li.downloadbtn a {
     width: 100%;
   }
+  .header .navbar-nav li.downloadbtn a img {
+  width: 160px;
+}
+.header .navbar-nav li.downloadbtn a {
+  padding: .5rem 0 !important;
+}
+
 }
 
 
