@@ -1385,6 +1385,16 @@ top: 6px;
 .header .navbar-nav li.downloadbtn a img {
   width: 140px;
 }
+.header .navbar-nav li.downloadbtn {
+  display: flex;
+}
+.header .navbar-nav li.downloadbtn a {
+  margin-right: 0;
+}
+.header .navbar-nav li.downloadbtn a img {
+  height: 41px;
+}
+
 @supports (-webkit-touch-callout: none) {
   .ios-apple {
   display: block;
@@ -1410,12 +1420,16 @@ top: 6px;
   .header .navbar-nav li.downloadbtn a {
     width: 100%;
   }
+
   .header .navbar-nav li.downloadbtn a img {
-  width: 160px;
+  width: 100%;
 }
 .header .navbar-nav li.downloadbtn a {
   padding: .5rem 0 !important;
 }
+.header .navbar-nav li.downloadbtn a {
+    width: 50%;padding-right: 10px !important;
+  }
 
 }
 
@@ -1465,7 +1479,7 @@ top: 6px;
 }
 @media (max-width: 420px) {
   .copyrightbtn img {
-  width: 40px;
+  width: 28px;
 }
 .copyrightbtn {
   left: 4px;
