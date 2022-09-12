@@ -905,13 +905,14 @@ text-transform: uppercase;
 font-weight: 600;
 font-family: 'Trim-Bold';
 border: 0;
-padding: 5px 10px;
+padding: 5px 5px;
 border: 1px solid #310813;
 border-radius: 5px;
 color: #310813;
 width: auto;
 float: right;
 font-family: "Segoe UI";
+font-size: 12px;
 }
 .bannerbutton input, .getbutton, .numbertext {
   display: none !important;
@@ -1430,6 +1431,10 @@ top: 6px;
 .header .navbar-nav li.downloadbtn a {
     width: 50%;padding-right: 10px !important;
   }
+  #kiwi-big-iframe-wrapper {
+  bottom: -5px !important;
+  right: 0px !important;
+}
 
 }
 
