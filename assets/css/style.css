@@ -1440,6 +1440,9 @@ top: 6px;
 
 
 @media (max-width: 767px) {
+  .legal_contnettext .col-md-6 {
+  margin-bottom: 25px;
+}
   .col-lg-3.col-md-6.footer-links {
   margin-top: 0 !important;
 }
