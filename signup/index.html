@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.3baan.com/signup/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 11:18:10 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,600&amp;display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+	<script src="assets/js/jquery.min.js"></script>
+</head>
+<body style="background:#333333;">
+<div class="w-100 fullpage">
+	<div class="w-100" style="display: flex;flex-wrap: wrap;justify-content: center;">
+	<div class="w-100">
+	<img class="logo" src="assets/img/logo.png">
+</div>
+	<div class="w-3 verifySection">
+		<div class="w-100">
+			<div class="w-100">
+				<h1 class="signup-title">SIGNUP AND START WINNING</h1>
+			</div>
+			<div class="w-100 p-64">
+			<div class="w-100 otp-send">
+				<label for="mobile">Mobile Number</label>
+				<div class="w-100">
+					<span class="code">+91</span>
+					<input type="text" name="number" id="mobile" maxlength="10" onkeypress="return NumberOnly(event)" />
+					<button class="sendotp" id="sendotp" type="submit" disabled="disabled">Send OTP</button>
+					<input type="hidden" id="mobile_UserID" val="">
+			<input type="hidden" id="inputEmail" name="login_username" autofocus="" autocomplete="off">
+			<input type="hidden" id="inputPassword" name="login_password" autocomplete="off">
+      <input type="hidden" id="agent_username" name="agent_username" value="false">
+				</div>
+			</div>
+			<div class="w-100 otp-show otp-send">
+				<label for="ist">OTP</label>
+				<div class="w-100">
+					<input type="Number" name="number" id="ist" maxlength="6" onkeyup="clickEvent(this,'sec')" style="width: 132px;padding: 5px;" />
+				</div>
+			</div>
+			<div class="w-100 accept-check">
+				<input type="checkbox" id="accept" name="" checked>
+				<label for="accept">I accept to the <a href="#">terms and conditions</a> and Privacy Policy and confirm that I am legally of age and fully competent. </label>
+			</div>
+			<div class="w-100">
+				<button id="verifynow" class="playwin" disabled="disabled">Play & win</button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+<div class="w-100 congratulation" style="display:none">
+
+		<div class="w-100">
+		
+    <p style="font-weight: bold;color: #fff;">Download and Start Playing</p>
+		</div>
+		<div class="w-100">
+			<a href="#" id="filedownload" style="margin-top: 50px;" class="verify">Download & Play</a>
+		</div>
+	</div>
+
+	</div>
+</div>
+<input type="hidden" placeholder="Enter Referral Code" id="promocode">
+
+
+<script>
+	$('#mobile').on('keyup',function(){
+       
+        if($(this).val().length == 10){
+          $('#sendotp').removeAttr('disabled','disabled');
+        }else{
+          $('#sendotp').attr('disabled','disabled');
+        }
+
+      });
+	$("#sendotp").click(function(){
+		
+		$("#verifynow").removeAttr('disabled','disabled');
+	});
+</script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+  
+      $('#agent_username').val(getUrlParameter('redirect'));
+      $('#promocode').val(getUrlParameter('referral'));
+
+
+    });
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? '' : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return '';
+};
+
+</script>
+
+<script>
+  $('#sendotp,#resendotp').click(function(){
+    $('.overly').show();
+  	
+       // clearvalidations();
+      // $("#sendotp").attr('disabled', true);
+      var clickonbtn = $(this);
+      var username       =   $("#mobile").val();
+      var device_type = "web";
+      var browser_type = getmybrower();
+      var longitude = "7.25412";
+      var latitude = "2.1258";
+      var imeino  ="gfergergryg43785t34r";
+      var client_id = "127";
+      var version_no = '100';
+       var promo_code = $("#promocode").val(); 
+      var agentusername = $("#agent_username").val();
+        if(username == '0' || username==''){
+        //alertify.error('Please Enter Mobile Number');
+        return false;
+        }
+    
+
+    var api_url="https://api.bopanel.xyz/index.php/Web_service/common_login";
+    //alert(api_url);
+      var passwd='';
+        $(".resend").addClass("hidden");
+      $.ajax({
+                  url: api_url,
+                  method: 'post',
+                  data: {
+                          username:username,
+                          client_id:client_id,
+                          device_type:device_type,
+                          browser_type:browser_type,
+                          longitude:longitude,
+                          latitude:latitude,
+                          imeino:imeino,
+                          version_no:version_no,
+                          promo_code:promo_code,
+                          device_id:'',
+                          agent_id:agentusername,
+                        },
+                  dataType: 'JSON',
+                  cache: false,
+
+                  success: function(data){
+           // console.log(data);
+           
+                        var result=data;
+                        // console.log(result.user_pass);
+                           passwd=result.user_pass;
+                         
+
+                            if(result.status==0)
+                            {
+                              //alertify.error(result.msg)
+                            }
+                            else
+                            {
+                            	$(".mobno_show").html("OTP sent to "+username)
+                                $(".otp-show").show();
+                                $(".back").show();
+                                $(".overly").hide();
+								$(".numberSection").hide();
+                              var left_time = 30;
+                            if(clickonbtn.attr('name') != 'no_otp'){
+                              clickonbtn.closest('.row_margin').find('.hideandshow').removeClass('hidden');
+                              timeinerval=setInterval(function() {
+                                left_time = left_time < 10 ? '0'+left_time: left_time;
+                                //clickonbtn.html("&ensp;&emsp;"+left_time+"&emsp;&ensp;");resendotp
+                                 $(".resendotp").html('Resend OTP in '+left_time+' secs');
+                                left_time = parseInt(left_time)-1;
+                                if(left_time == 0)
+                                {  
+                                    $("#sendotp").attr('disabled', false);
+                                     $(".resendotp").html('');
+                                       $(".resend").removeClass("hidden");
+                                 //  clickonbtn.css('font-size','12px');
+                                   clickonbtn.removeAttr('disabled', 'disabled');
+                                   $('#sendotp').removeAttr('disabled', 'disabled');
+                                   clearInterval(timeinerval);
+
+                                   // clickonbtn.html('Resend <br> OTP');
+                                   // clickonbtn.css('font-size','12px');
+                                   // clickonbtn.removeAttr('disabled', 'disabled');
+                                   // $('#sendotp').removeAttr('disabled', 'disabled');
+                                   // clearInterval(timeinerval);
+                                }
+                              }, 1000);
+                              }
+                               $('#login_sign_up').removeAttr('disabled', 'disabled');
+                            $('#mobile_UserID').val(result.user_id);
+                            }
+                            
+                  }
+              });
+   
+    
+    
+    
+   });
+   function getmybrower() { 
+        if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ){
+            return "Opera"
+        }
+        else if(navigator.userAgent.indexOf("Chrome") != -1 ){
+            return 'Chrome';
+        }
+        else if(navigator.userAgent.indexOf("Safari") != -1){
+            return 'Safari';
+        }
+        else if(navigator.userAgent.indexOf("Firefox") != -1 ){
+             return 'Firefox';
+        }
+        else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )){
+          return 'IE'; 
+        }  
+        else{
+           return 'unknown';
+        }
+    }
+
+
+    
+      
+    $('#verifynow').click(function(){
+    	
+    	$('#verifynow').attr('disabled', 'disabled');
+      var username       = $("#mobile").val();
+      var client_id        = "127";
+      var device_type = "web";
+      var phone_number = $("#mobile").val();
+      var browser_type = getmybrower();
+      var longitude = "7.25412";
+      var latitude = "2.1258";
+      var imeino  ="gfergergryg43785t34r";
+      var version_no = '100';
+      var device_id = "";
+		var ist_otp = $('#ist').val();
+        var promo_code = $("#promocode").val(); 
+
+		var otp =ist_otp;
+      //var otp = $("#login_mobileotpbox").val();
+      var user_id = $("#mobile_UserID").val();
+
+      if(otp=='')
+      {
+      // alerti fy.error('Please Enter Otp');
+        return false;
+      }
+
+    
+     
+  
+    
+    var api_url="https://api.bopanel.xyz/index.php/Web_service/confirmotp_v3";
+	// $('#submit_MobileOtp').attr('disabled', 'disabled');
+      //$(".validationText3").text("").hide();
+     $.ajax({
+                  url: api_url,
+                  method: 'post',
+                  data: {
+                    username:username,
+                    client_id:client_id,
+                    device_type:device_type,
+                    phone_number:phone_number,
+                    browser_type:browser_type,
+                    longitude:longitude,
+                    latitude:latitude,
+                    imeino:imeino,
+                    version_no:version_no,
+                    device_id:device_id,
+                    promo_code:promo_code,
+                    otp:otp,
+                    user_id:user_id,
+                  },
+                  dataType: 'JSON',
+                  cache: false,
+                  async:false,
+
+                  success: function(data){
+                  	$('#verifynow').removeAttr('disabled', 'disabled');
+                        var result=data;
+                        console.log(result);
+                        if(result.status=="1"){
+                        
+                                var token = result.data.token;
+                                
+                              // setTimeout(function() {
+                                    
+                              //       loginafersignup_v1(username,'',token);
+                                   
+                              // }, 2000);
+								$(".verifySection").hide();
+                $(".back").hide();
+								$(".numberSection").hide();
+								$(".congratulation").show();
+                $(".footer-info").hide();
+                            //  alertify.success('Login Successful'); 
+
+                              
+                        }else{
+            
+            $('.data-get input[name="login_username"]').val('');
+            $('.data-get input[name="login_password"]').val('');
+                           
+                // $('.alert-danger1').append(result.msg);
+               alertify.error(result.msg);
+              setTimeout(function() {
+                                    $('.alert-danger1').hide();
+                                    
+                              }, 1500);
+                
+              
+                        }
+                  },
+                  error: function(data){
+
+                      var errors = data.responseJSON.errors;
+                    //  console.log(errors);
+
+                      $.each(errors, function(key, value){
+
+                        $('.alert-danger1').show();
+                        $('.alert-danger1').append('<p>'+value+'</p>');
+                      });
+                  }
+
+                  });
+     
+      
+    
+    
+    
+   });
+
+            $( document ).ready(function() {
+              
+        downloadFile();
+    });
+        var BASE_URL = 'https://api.bopanel.xyz/index.php/Web_service/';
+
+    function downloadFile(){
+        var client_id        = "127";
+          var formData = new FormData();
+          formData.append('device_type','android');
+          formData.append('client_id',client_id);
+          var api_url1=BASE_URL+"getversion";
+        $.ajax({
+            url:api_url1,
+            method:"post",
+            data: formData,
+            dataType: 'JSON',
+            processData: false,
+            contentType: false,
+
+            success: function(data){
+                
+                var result=data;
+                if(result.status==1){
+
+
+
+                // filedownload(result.app_link,'App');
+
+                 $("#filedownload").attr("href",result.app_link);
+                 $("#filedownload2").attr("href",result.app_link);
+                 console.log(result.app_link);
+                }
+              }
+        });
+    }
+    
+
+ </script>
+
+</body>
+
+<!-- Mirrored from www.3baan.com/signup/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 11:18:11 GMT -->
+</html>
