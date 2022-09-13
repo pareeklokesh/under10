@@ -1,607 +1,397 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Mirrored from www.3baan.com/signup/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 11:18:10 GMT -->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Under 10</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
-
-<link rel="icon" type="text/css" href="assets/img/favicon.png"> 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/owl.carousel.js"></script>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,600&amp;display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+	<script src="assets/js/jquery.min.js"></script>
 </head>
-<body>
-
-  <!-- Header End -->
-
-	<div class="container-fluid header">
-   <div class="container"> 
-<div class="row">
-  <div class="col-md-12 d-flex justify-content-between align-items-center">
-    <div class="w-auto logoclass">
-      <a href="index.html">
-        <img class="logo" src="assets/img/logo.png" alt="Under10" />
-      </a>
-    </div>
-    <div class="w-auto">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">How to Play</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="under10.html">Under10</a></li>
-            <li><a class="dropdown-item" href="rummy.html">Rummy</a></li>
-            <li><a class="dropdown-item" href="ludo.html">Ludo</a></li>
-          </ul>
-        </li>
-        
-        
-        <li class="nav-item">
-          <a class="nav-link" href="about-us.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact-us.html">Contact Us</a>
-        </li>
-        <li class="nav-item downloadbtn">
-          <a class="nav-link " href="#"><img class="" src="assets/img/plat-store.png" width="100" style="border: 1px solid #a0a0a0;border-radius: 6px;"></a>
-          <a class="nav-link " href="#" title="Upcoming"><img class="" src="assets/img/apple_1.png" width="100"></a>
-        </li>
-      </ul>
-    </div>
-  
-</nav>
-    </div>
-
-    
-
-  </div>
+<body style="background:#333333;">
+<div class="w-100 fullpage">
+	<div class="w-100" style="display: flex;flex-wrap: wrap;justify-content: center;">
+	<div class="w-100">
+	<img class="logo" src="assets/img/logo.png">
 </div>
-   </div>
-  </div>
+	<div class="w-3 verifySection">
+		<div class="w-100">
+			<div class="w-100">
+				<h1 class="signup-title">SIGNUP AND START WINNING</h1>
+			</div>
+			<div class="w-100 p-64">
+			<div class="w-100 otp-send">
+				<label for="mobile">Mobile Number</label>
+				<div class="w-100">
+					<span class="code">+91</span>
+					<input type="text" name="number" id="mobile" maxlength="10" onkeypress="return NumberOnly(event)" />
+					<button class="sendotp" id="sendotp" type="submit" disabled="disabled">Send OTP</button>
+					<input type="hidden" id="mobile_UserID" val="">
+			<input type="hidden" id="inputEmail" name="login_username" autofocus="" autocomplete="off">
+			<input type="hidden" id="inputPassword" name="login_password" autocomplete="off">
+      <input type="hidden" id="agent_username" name="agent_username" value="false">
+				</div>
+			</div>
+			<div class="w-100 otp-show otp-send">
+				<label for="ist">OTP</label>
+				<div class="w-100">
+					<input type="Number" name="number" id="ist" maxlength="6" onkeyup="clickEvent(this,'sec')" style="width: 132px;padding: 5px;" />
+				</div>
+			</div>
+			<div class="w-100 accept-check">
+				<input type="checkbox" id="accept" name="" checked>
+				<label for="accept">I accept to the <a href="#" style="color:#e58a1b;">terms and conditions</a> and Privacy Policy and confirm that I am legally of age and fully competent. </label>
+			</div>
+			<div class="w-100">
+				<button id="verifynow" class="playwin" disabled="disabled">Play & win</button>
+			</div>
+		</div>
+		</div>
+	</div>
 
-  <!-- Header End -->
 
-  <div class="w-100 position-relative">
-    <div class="banner-slide w-100 position-relative owl-carousel owl-theme">
-    <div class="item">
-    <img class="w-100" src="assets/img/banner.png" />
-  </div>
-  <div class="item">
-    <img class="w-100" src="assets/img/banner2.png" />
-  </div>
-  </div>
-   <div class="copyrightbtn">
-     <img src="assets/img/copyright.png" data-bs-toggle="modal" data-bs-target="#copyrightdoc" />
-   </div>
-  </div>
+<div class="w-100 congratulation" style="display:none">
 
-  
+		<div class="w-100">
+		
+    <p style="font-weight: bold;color: #fff;">Download and Start Playing</p>
+		</div>
+		<div class="w-100">
+			<a href="#" id="filedownload" style="margin-top: 50px;" class="verify">Download & Play</a>
+		</div>
+	</div>
 
-  
-<div class="container-fluid faster">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <img src="assets/img/faster.png" class="w-100" />
-      </div>
-      <div class="col-lg-3">
-        <img src="assets/img/timepass.png" class="w-100" />
-      </div>
-      <div class="col-lg-3">
-        <img src="assets/img/mg.png" class="w-100" />
-      </div>
-      <div class="col-lg-3">
-        <img src="assets/img/khel.png" class="w-100" />
-      </div>
-    </div>
-  </div>
+	</div>
 </div>
-  
-  
-<div class="container-fluid legal_contnettext game_rules">
-    <div class="container">
-      <!-- <h2 class="text-center section-title" style="margin-bottom: 55px">Playrst with Players</h2> -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="w-100 rule_content">
-            <!-- <span class="game_icon">
-            <img src="assets/img/withdraw.png" />
-            </span> -->
-            <h4 class="sub_head">How to Play</h4>
-            <ul class="list listhome">
-              <li>Objective of Under10: Be the player with the score of less than 10</li>
-              <li>Number of players: 2 or more</li>
-              <li>Number of cards: 52 card deck game and 4 cards dealt to each player</li>
-              <li>Rank of cards: Ace (low) – King (high) and value of number cards is same as printed like value of card 2 of any suit is 2.</li>
-              <li>Value of Ace is 1 and King is of 13</li>
-              <li>Under10 is a card game played with 4 hand cards. Players will have to pick and discard card from open/close deck to make the sum of cards in hand value less than 10.</li>
-              <li>On player turn, firstly have to discard a card then pick from open or closed deck. Player can discard multiple cards of same value.</li>
-              <li>Players earn points based on the cards pick and discard. The player who ended the hand with less than 10 points, will get the declare button. The player with lowest sum of cards (Under10) wins.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="w-100 rule_content">
-            <!-- <span class="game_icon">
-            <img src="assets/img/withdraw.png" />
-            </span> -->
-            <h4 class="sub_head">Prize Money Scenarios</h4>
-            <ul class="list listhome">
-              <li>1st Position Player (winner) = 2 x entry fee - commission</li>
-              <li>Other Players = entry fee - commission </li>
-              <li>Last position Player = 0</li>
-              <li>If there are 2 winners, rank will be decided based on the declaration sequence</li>
-              <li>If there are 2 last position players, then both will get 0</li>
-              <li>If more than 2 players and playing any more than 1 player leave the game at mid, then winner will get other players amount as bonus</li> 
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<input type="hidden" placeholder="Enter Referral Code" id="promocode">
 
-  <div class="container-fluid topgame" style="margin-top: 80px;">
-    <div class="container">
-      <h2 class="text-center section-title" style="margin-bottom: 55px">Top Games on Under10 </h2>
-      <!-- <span class="text-center sub-title d-block">Play over 60+ Games and Win Cash! </span> -->
-      <div class="row" style="flex-wrap: wrap !important;">
-        <div class="col-md-4 text-center">
-          <a href="#">
-          <img class="w-100" src="assets/img/fantasy_cricket.png">
-          <p class="topgame-content text-center">New and Unique Skill Based Card Game</p>
-        </a>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="#">
-          <img class="w-100" src="assets/img/ludo_win.png">
-          <p class="topgame-content text-center">Classic</p>
-        </a>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="#">
-          <img class="w-100" src="assets/img/Fruit_Dart.png">
-          <p class="topgame-content text-center">LUDU</p>
-        </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
 
-  <div class="container-fluid section-margin" style="margin-top: 80px;">
-    <div class="container">
-      <h2 class="text-center section-title">Withdraw Winnings with</h2>
-      <div class="row justify-content-center space-upiadd">
-        <div class="w-auto space-upi">
-          <img class="w-120" src="assets/img/upi.png" />
-        </div>
-        <div class="w-auto space-upi">
-          <img class="w-120" src="assets/img/amazon_pay.png" />
-        </div>
-        <div class="w-auto space-upi">
-          <img class="w-120" src="assets/img/bank_transfer.png" />
-        </div>
-        <div class="w-auto space-upi">
-          <img class="w-120" src="assets/img/paytm_81529f7dce.png" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div class="container-fluid section-margin testimonial-add">
-    <div class="container position-relative">
-      
-      <h2 class="text-center section-title" style="margin-bottom: 64px;">Testimonials</h2>
-      <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="testimonial-slide owl-carousel owl-theme">
-        
-          <div class="item">
-            <div class="testimonial">
-                    <div class="pic">
-                               <img class="m-0" src="assets/img/user.png">
-                    </div>
-                    <div class="carousel-line mt-3"></div>
-                    <p class="description">Hassle free withdraw, get immediate approval on request. Game is smooth and in good way.</p>
-                    <h3 class="title">Niket</h3>
-                </div>
-                
-
-              </div>
-              <div class="item">
-            <div class="testimonial">
-                    <div class="pic">
-                               <img class="m-0" src="assets/img/user.png">
-                    </div>
-                    <div class="carousel-line mt-3"></div>
-                    <p class="description">Under10 have multiple variant available, i have played almost all. Game is fine, love to play.</p>
-                    <h3 class="title">Siridhar</h3>
-                </div>
-                
-
-              </div>
-            </div>
-      </div>
-    </div>
-
-      
-      
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="container">
-      
-      <!-- <h2 class="text-center section-title" style="margin-bottom: 64px;">Recognised by 10 Lakh+ Indians</h2> -->
-      <div class="row justify-content-center">
-      <div class="col-md-9">
-        <div class="row flex-wrap-inherit">
-          <div class="col-md-3 col-3 usericon">
-            <div class="w-100 text-center">
-              <img class="w-120" src="assets/img/user_icon.png" />
-              <p class="d-block">10 Lakh+<span class="d-block">Users</span></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-3 usericon">
-            <div class="w-100 text-center">
-              <img class="w-120" src="assets/img/secure_icon.png" />
-              <p class="d-block">100% Secure<span class="d-block">& Legal</span></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-3 usericon">
-            <div class="w-100 text-center">
-              <img class="w-120" src="assets/img/support_icon.png" />
-              <p class="d-block">24 x 7<span class="d-block">Customer Support</span></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-3 usericon">
-            <div class="w-100 text-center">
-              <img class="w-120" src="assets/img/cashback_icon.png" />
-              <p class="d-block">Cashback<span class="d-block">Offers</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  
-
-  <footer id="footer">
-
-    <div class="footer-top container-fluid">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-           <img src="assets/img/logo.png" class="foot-logo" width="90">
-            <p>
-             
-              <strong style="">Payment methods:</strong> 
-        
-        </p>
-        <ul class="foot-img p-0">
-        <li><img src="assets/img/1.jpg" class="uds"></li>
-          <li><img src="assets/img/2.jpg" class="uds"></li>
-          <li><img src="assets/img/3.jpg" class="uds"></li>
-        </ul>
-    <strong class="text-white">Email:</strong> <span class="text-white">support@under10game.com</span><br>
-            <strong class="text-white" style="font-size: 15px;margin-top: 10px;margin-bottom: 15px;display: block;">Follow Us</strong>
-            <div class="social-links text-left text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+<script>
+	$('#mobile').on('keyup',function(){
        
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4 class="useful">Useful Links</h4>
-            <ul class="p-0">
-              <li><i class="bx bx-chevron-right"></i> <a href="terms-condition.html">Terms and Conditions</a></li>
-              <li><a href="fair-play.html">Fair Play</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-        
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6  footer-links" style="margin-top:33px;">
-           
-            <ul class="sec-foot">
-              
-              <li><i class="bx bx-chevron-right"></i> <a href="depositandwithdraw.html">Deposit &amp; Withdrawal</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><i class="bx bx-chevron-right"></i> <a href="contact-us.html">Contact Us</a></li>
-        <li><a href="refund-policy.html">Refund / Cancellation</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>About us</h4>
-            <p class="text-white">Launched in august  2022, Under10 is the gaming app and In a short period of time, Under 10 has evolved as the fastest growing Gaming platform in India. Providing a state-of-the-art gaming experience with complete digital security, you will have a wonderful experience with the Under 10!</p>
-         <strong class="text-white" style="font-size: 15px;">Security &amp; Certificates:</strong> 
-        
-        <ul class="foot-img p-0" style="margin-top:15px;">
-        <li><img src="assets/img/4.png" class="us"></li>
-         
-        </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-<div class="container-fluid" style="background: #310813;">
-    <div class="container d-md-flex py-3" style="justify-content: center;align-items: center;">
-
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          © Copyright <strong><span>under10game.com</span></strong>. All Rights Reserved
-        </div>
-       
-      </div>
-      
-    </div>
-    </div>
-  </footer>
-
- 
-
-  <div class="w-100 mobile-view">
-    <div class="w-auto">
-    <img src="assets/img/copyright.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#copyrightdoc" width="70" />
-  </div>
-  <div class="w-auto">
-    <button class="download-footer"><img class="ios-apple" src="assets/img/apple.png" /><img class="android" src="assets/img/android-logo.png" />Download Now</button>
-  </div>
-  <div class="" style="width:50px;height: 50px;"></div>
-  </div>
-
-
-  <!-- Copy Right Modal -->
-
-  <div class="modal fade copyrightdocmodal" id="copyrightdoc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div> -->
-      <div class="modal-body position-relative">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <img class="w-100" src="assets/img/copyrightdoc.png" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Copy Right Modal End! -->
-
-
-
-  <script>
-  jQuery(document).ready(function($) {
-              $('.loop').owlCarousel({
-                center: true,
-                items: 1,
-                loop: true,
-                margin: 10,
-                responsive: {
-                  600: {
-                    items: 1
-                  }
-                }
-              });
-              });
-</script>
-
-<script>
-  $(".navbar-mobile .fantasy1").click(function(){
-    $(this).toggleClass("fantasygame1");
-  });
-  $(".navbar-mobile .fantasy2").click(function(){
-    $(this).toggleClass("fantasygame2");
-  });
-  $(".navbar-mobile .fantasy3").click(function(){
-    $(this).toggleClass("fantasygame3");
-  });
-  $(".navbar-mobile .fantasy4").click(function(){
-    $(this).toggleClass("fantasygame4");
-  });
-  $(".navbar-mobile .fantasy5").click(function(){
-    $(this).toggleClass("fantasygame5");
-  });
-  $(".navbar-mobile .fantasy6").click(function(){
-    $(this).toggleClass("fantasygame6");
-  });
-  $(".navbar-mobile .fantasy7").click(function(){
-    $(this).toggleClass("fantasygame7");
-  });
-</script>
-
-<script>
-  $(".readmore").click(function(){
-    $(".readmoreshow").slideToggle(500);
-    if ($('.readmore').text() == "....More") {
-                      $('.readmore').text("Less");
-                  } else {
-                      $('.readmore').text("....More");
-                  }
-  });
-
-  
-  $(".readmore1").click(function(){
-    $(".readmoreshow1").slideToggle(500);
-    if ($('.readmore').text() == "....More") {
-                      $('.readmore1').text("Less");
-                  } else {
-                      $('.readmore1').text("....More");
-                  }
-  });
-  $(".readmore2").click(function(){
-    $(".readmoreshow2").slideToggle(500);
-    if ($('.readmore').text() == "....More") {
-                      $('.readmore2').text("Less");
-                  } else {
-                      $('.readmore2').text("....More");
-                  }
-  });
-
-  $(".readmore3").click(function(){
-    $(".readmoreshow3").slideToggle(500);
-    if ($('.readmore3').text() == "....More") {
-                      $('.readmore3').text("Less");
-                  } else {
-                      $('.readmore3').text("....More");
-                  }
-  });
-  $(".readmore4").click(function(){
-    $(".readmoreshow4").slideToggle(500);
-    if ($('.readmore4').text() == "....More") {
-                      $('.readmore4').text("Less");
-                  } else {
-                      $('.readmore4').text("....More");
-                  }
-  });
-  $(".readmore5").click(function(){
-    $(".readmoreshow5").slideToggle(500);
-    if ($('.readmore').text() == "....More") {
-                      $('.readmore5').text("Less");
-                  } else {
-                      $('.readmore5').text("....More");
-                  }
-  });
-  $(".text-change").click(function(){
-    debugger
-    $(this).text("...More");
-  });
-</script>
-
-<script>
-  $(".getbutton").click(function(){
-    $(this).css("font-size", "0");
-    $(".spiner").css("display", "inline-block");
-  });
-</script>
-<script>
-  window.addEventListener('load',function(){
-  document.querySelector('body').classList.add("loaded")  
-});
-</script>
-<script>
-  $(document).ready(function() {
-     $('.getbutton').prop('disabled', true);
-     $('#mob-number').keyup(function() {
-        if($(this).val().length == 10) {
-           $('.getbutton').prop('disabled', false);
+        if($(this).val().length == 10){
+          $('#sendotp').removeAttr('disabled','disabled');
+        }else{
+          $('#sendotp').attr('disabled','disabled');
         }
 
-     });
- });
+      });
+	$("#sendotp").click(function(){
+		
+		$("#verifynow").removeAttr('disabled','disabled');
+	});
 </script>
+
 <script type="text/javascript">
-  $(".getbutton").on("click",function(){
-    var client_id = 99;
-    var number = $("#mob-number").val();
-      var formData = new FormData();
-      formData.append('phone_number',number);
-      formData.append('client_id',client_id);
-      var api_url1="https://staging-api.bopanel.xyz/index.php/web_service/downlode_sms";
-      $(".getbutton").attr("disabled","disabled");
-    $.ajax({
-        url:api_url1,
-        method:"post",
-        data: formData,
-        dataType: 'JSON',
-        processData: false,
-        contentType: false,
+    
+    $(document).ready(function(){
+  
+      $('#agent_username').val(getUrlParameter('redirect'));
+      $('#promocode').val(getUrlParameter('referral'));
 
-        success: function(data){
-            
-            var result=data;
-            if(result.error==0){
 
-             // $(".getbutton").html("Sent");
-             // $(".getbutton").hide();
-             // $(".getbutton").css("font-size","20px");
-              //$("#mob-number").hide();
-              //$(".numbertext").hide();
-              $(".link-sent").text("Fortune Games App Download link sent on your number.");
-              $(".link-sent").show();
-              $(".getbutton").css("font-size", "16px");
-              $(".getbutton").removeAttr("disabled");
-              $(".spiner").css("display", "none");
-              $("#mob-number").val('');
-            // filedownload(result.app_link,'App');
-
-             
-
-            }
-          }
     });
-  });
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
 
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? '' : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return '';
+};
 
 </script>
 
 <script>
-  jQuery(document).ready(function($) {
-              $('.testimonial-slide, .banner-slide').owlCarousel({
-                center: true,
-                items: 1,
-                loop: true,
-                margin: 10,autoplay:false,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-                responsive: {
-                  600: {
-                    items: 1
+  $('#sendotp,#resendotp').click(function(){
+    $('.overly').show();
+  	
+       // clearvalidations();
+      // $("#sendotp").attr('disabled', true);
+      var clickonbtn = $(this);
+      var username       =   $("#mobile").val();
+      var device_type = "web";
+      var browser_type = getmybrower();
+      var longitude = "7.25412";
+      var latitude = "2.1258";
+      var imeino  ="gfergergryg43785t34r";
+      var client_id = "127";
+      var version_no = '100';
+       var promo_code = $("#promocode").val(); 
+      var agentusername = $("#agent_username").val();
+        if(username == '0' || username==''){
+        //alertify.error('Please Enter Mobile Number');
+        return false;
+        }
+    
+
+    var api_url="https://api.bopanel.xyz/index.php/Web_service/common_login";
+    //alert(api_url);
+      var passwd='';
+        $(".resend").addClass("hidden");
+      $.ajax({
+                  url: api_url,
+                  method: 'post',
+                  data: {
+                          username:username,
+                          client_id:client_id,
+                          device_type:device_type,
+                          browser_type:browser_type,
+                          longitude:longitude,
+                          latitude:latitude,
+                          imeino:imeino,
+                          version_no:version_no,
+                          promo_code:promo_code,
+                          device_id:'',
+                          agent_id:agentusername,
+                        },
+                  dataType: 'JSON',
+                  cache: false,
+
+                  success: function(data){
+           // console.log(data);
+           
+                        var result=data;
+                        // console.log(result.user_pass);
+                           passwd=result.user_pass;
+                         
+
+                            if(result.status==0)
+                            {
+                              //alertify.error(result.msg)
+                            }
+                            else
+                            {
+                            	$(".mobno_show").html("OTP sent to "+username)
+                                $(".otp-show").show();
+                                $(".back").show();
+                                $(".overly").hide();
+								$(".numberSection").hide();
+                              var left_time = 30;
+                            if(clickonbtn.attr('name') != 'no_otp'){
+                              clickonbtn.closest('.row_margin').find('.hideandshow').removeClass('hidden');
+                              timeinerval=setInterval(function() {
+                                left_time = left_time < 10 ? '0'+left_time: left_time;
+                                //clickonbtn.html("&ensp;&emsp;"+left_time+"&emsp;&ensp;");resendotp
+                                 $(".resendotp").html('Resend OTP in '+left_time+' secs');
+                                left_time = parseInt(left_time)-1;
+                                if(left_time == 0)
+                                {  
+                                    $("#sendotp").attr('disabled', false);
+                                     $(".resendotp").html('');
+                                       $(".resend").removeClass("hidden");
+                                 //  clickonbtn.css('font-size','12px');
+                                   clickonbtn.removeAttr('disabled', 'disabled');
+                                   $('#sendotp').removeAttr('disabled', 'disabled');
+                                   clearInterval(timeinerval);
+
+                                   // clickonbtn.html('Resend <br> OTP');
+                                   // clickonbtn.css('font-size','12px');
+                                   // clickonbtn.removeAttr('disabled', 'disabled');
+                                   // $('#sendotp').removeAttr('disabled', 'disabled');
+                                   // clearInterval(timeinerval);
+                                }
+                              }, 1000);
+                              }
+                               $('#login_sign_up').removeAttr('disabled', 'disabled');
+                            $('#mobile_UserID').val(result.user_id);
+                            }
+                            
                   }
-                }
               });
-              });
-</script>
+   
+    
+    
+    
+   });
+   function getmybrower() { 
+        if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ){
+            return "Opera"
+        }
+        else if(navigator.userAgent.indexOf("Chrome") != -1 ){
+            return 'Chrome';
+        }
+        else if(navigator.userAgent.indexOf("Safari") != -1){
+            return 'Safari';
+        }
+        else if(navigator.userAgent.indexOf("Firefox") != -1 ){
+             return 'Firefox';
+        }
+        else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )){
+          return 'IE'; 
+        }  
+        else{
+           return 'unknown';
+        }
+    }
 
-<script>
-    (function(w,d,s,c,r,a,m){
-      w['KiwiObject']=r;
-      w[r]=w[r] || function () {
-        (w[r].q=w[r].q||[]).push(arguments)};
-      w[r].l=1*new Date();
-        a=d.createElement(s);
-        m=d.getElementsByTagName(s)[0];
-      a.async=1;
-      a.src=c;
-      m.parentNode.insertBefore(a,m)
-    })(window,document,'script',"https://app.interakt.ai/kiwi-sdk/kiwi-sdk-17-prod-min.js?v="+ new Date().getTime(),'kiwi');
-    window.addEventListener("load",function () {
-      kiwi.init('', 'SjP6yq6exCK1B5NESf6vQ4zZ9MiVfI3R', {});
+
+    
+      
+    $('#verifynow').click(function(){
+    	
+    	$('#verifynow').attr('disabled', 'disabled');
+      var username       = $("#mobile").val();
+      var client_id        = "127";
+      var device_type = "web";
+      var phone_number = $("#mobile").val();
+      var browser_type = getmybrower();
+      var longitude = "7.25412";
+      var latitude = "2.1258";
+      var imeino  ="gfergergryg43785t34r";
+      var version_no = '100';
+      var device_id = "";
+		var ist_otp = $('#ist').val();
+        var promo_code = $("#promocode").val(); 
+
+		var otp =ist_otp;
+      //var otp = $("#login_mobileotpbox").val();
+      var user_id = $("#mobile_UserID").val();
+
+      if(otp=='')
+      {
+      // alerti fy.error('Please Enter Otp');
+        return false;
+      }
+
+    
+     
+  
+    
+    var api_url="https://api.bopanel.xyz/index.php/Web_service/confirmotp_v3";
+	// $('#submit_MobileOtp').attr('disabled', 'disabled');
+      //$(".validationText3").text("").hide();
+     $.ajax({
+                  url: api_url,
+                  method: 'post',
+                  data: {
+                    username:username,
+                    client_id:client_id,
+                    device_type:device_type,
+                    phone_number:phone_number,
+                    browser_type:browser_type,
+                    longitude:longitude,
+                    latitude:latitude,
+                    imeino:imeino,
+                    version_no:version_no,
+                    device_id:device_id,
+                    promo_code:promo_code,
+                    otp:otp,
+                    user_id:user_id,
+                  },
+                  dataType: 'JSON',
+                  cache: false,
+                  async:false,
+
+                  success: function(data){
+                  	$('#verifynow').removeAttr('disabled', 'disabled');
+                        var result=data;
+                        console.log(result);
+                        if(result.status=="1"){
+                        
+                                var token = result.data.token;
+                                
+                              // setTimeout(function() {
+                                    
+                              //       loginafersignup_v1(username,'',token);
+                                   
+                              // }, 2000);
+								$(".verifySection").hide();
+                $(".back").hide();
+								$(".numberSection").hide();
+								$(".congratulation").show();
+                $(".footer-info").hide();
+                            //  alertify.success('Login Successful'); 
+
+                              
+                        }else{
+            
+            $('.data-get input[name="login_username"]').val('');
+            $('.data-get input[name="login_password"]').val('');
+                           
+                // $('.alert-danger1').append(result.msg);
+               alertify.error(result.msg);
+              setTimeout(function() {
+                                    $('.alert-danger1').hide();
+                                    
+                              }, 1500);
+                
+              
+                        }
+                  },
+                  error: function(data){
+
+                      var errors = data.responseJSON.errors;
+                    //  console.log(errors);
+
+                      $.each(errors, function(key, value){
+
+                        $('.alert-danger1').show();
+                        $('.alert-danger1').append('<p>'+value+'</p>');
+                      });
+                  }
+
+                  });
+     
+      
+    
+    
+    
+   });
+
+            $( document ).ready(function() {
+              
+        downloadFile();
     });
-  </script>
+        var BASE_URL = 'https://api.bopanel.xyz/index.php/Web_service/';
 
+    function downloadFile(){
+        var client_id        = "127";
+          var formData = new FormData();
+          formData.append('device_type','android');
+          formData.append('client_id',client_id);
+          var api_url1=BASE_URL+"getversion";
+        $.ajax({
+            url:api_url1,
+            method:"post",
+            data: formData,
+            dataType: 'JSON',
+            processData: false,
+            contentType: false,
+
+            success: function(data){
+                
+                var result=data;
+                if(result.status==1){
+
+
+
+                // filedownload(result.app_link,'App');
+
+                 $("#filedownload").attr("href",result.app_link);
+                 $("#filedownload2").attr("href",result.app_link);
+                 console.log(result.app_link);
+                }
+              }
+        });
+    }
+    
+
+ </script>
 
 </body>
+
+<!-- Mirrored from www.3baan.com/signup/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 11:18:11 GMT -->
 </html>
