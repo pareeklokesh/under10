@@ -395,7 +395,23 @@
 
 <!-- Copy Right Modal End! -->
 
-
+<div class="age_box">
+    
+    <div class="box-right">
+      
+      <p>If you are below 18, Click yes to redirect <br>to virtual money website</p>
+      
+      <a href="#" class="btn btn-alpha"  id="refresh-page">Yes</a>
+      <div class="" style="min-height: 56px;display: flex;align-items: center;width: 100%;">
+      <p class="decor-line"><span>Or</span></p>
+    </div>
+      
+      <a href="#" class="btn btn-beta" id="reset-session">No</a>
+    </div>
+    </div>
+  </div>
+  
+ 
 
   <script>
   jQuery(document).ready(function($) {
@@ -597,7 +613,28 @@
       kiwi.init('', 'SjP6yq6exCK1B5NESf6vQ4zZ9MiVfI3R', {});
     });
   </script>
+<script>
+  jQuery(document).ready(function($){
 
+if (sessionStorage.getItem('advertOnce') !== 'true') {
+
+  $('.age_box').show();
+}else{
+  $('.age_box').hide();
+}
+ 
+$('#refresh-page').on('click',function(){
+$('.age_box').hide();
+sessionStorage.setItem('advertOnce','true');
+});
+  
+$('#reset-session').on('click',function(){
+$('.age_box').show();
+sessionStorage.setItem('advertOnce','');
+});
+ 
+});
+</script>
 
 </body>
 </html>
