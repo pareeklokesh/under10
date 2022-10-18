@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Under 10</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Under 10</title>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
 
@@ -16,12 +16,17 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/owl.carousel.js"></script>
+<style>
+  @media (max-width: 767px) {
+    .age_box p {font-size: 16px;}
+  }
+</style>
 </head>
 <body>
 
   <!-- Header End -->
 
-	<div class="container-fluid header">
+  <div class="container-fluid header">
    <div class="container"> 
 <div class="row">
   <div class="col-md-12 d-flex justify-content-between align-items-center">
@@ -59,7 +64,7 @@
           <a class="nav-link" href="contact-us.html">Contact Us</a>
         </li>
         <li class="nav-item downloadbtn">
-          <a class="nav-link " href="#"><img class="" src="assets/img/plat-store.png" width="100" style="border: 1px solid #a0a0a0;border-radius: 6px;"></a>
+          <a class="nav-link " href="https://mgpapp.s3.ap-southeast-1.amazonaws.com/under10/under10Games.apk"><img class="" src="assets/img/plat-store.png" width="100" style="border: 1px solid #a0a0a0;border-radius: 6px;"></a>
           <a class="nav-link " href="#" title="Upcoming"><img class="" src="assets/img/apple_1.png" width="100"></a>
         </li>
       </ul>
@@ -374,7 +379,7 @@
     <img src="assets/img/copyright.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#copyrightdoc" width="70" />
   </div>
   <div class="w-auto">
-    <button class="download-footer"><img class="ios-apple" src="assets/img/apple.png" /><img class="android" src="assets/img/android-logo.png" />Download Now</button>
+    <a href="https://mgpapp.s3.ap-southeast-1.amazonaws.com/under10/under10Games.apk"><button class="download-footer"><img class="ios-apple" src="assets/img/apple.png" /><img class="android" src="assets/img/android-logo.png" />Download Now</button></a>
   </div>
   <div class="" style="width:50px;height: 50px;"></div>
   </div>
@@ -397,11 +402,12 @@
 
 <div class="age_box" style="display:none;">
     
-    <div class="box-right">
+    <div class="box-right" style="margin-top:-40px;">
+      <img src="assets/img/logo.png" width="150" class="mb-2" />
       
-      <p>If you are below 18, Click yes to redirect <br>virtual money website</p>
+      <p>If you are above 18  click Yes to play real money games otherwise<br> No to redirect to virtual money  website </p>
       
-      <a href="https://pareeklokesh.github.io/kids/" target="_blank" class="btn btn-alpha"  id="reset-session">Yes</a>
+      <a href="kids/index.html" class="btn btn-alpha"  id="reset-session">Yes</a>
       <div class="" style="min-height: 56px;display: flex;align-items: center;width: 100%;">
       <p class="decor-line"><span>Or</span></p>
     </div>
@@ -629,8 +635,8 @@ sessionStorage.setItem('advertOnce','true');
 });
   
 $('#reset-session').on('click',function(){
-$('.age_box').hide();
-sessionStorage.setItem('advertOnce','true');
+//$('.age_box').hide();
+sessionStorage.setItem('advertOnce','');
 });
  
 });
