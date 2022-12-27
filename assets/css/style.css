@@ -1496,15 +1496,46 @@ padding: 8px 15px;outline: none !important;box-shadow: none !important;
   font-size: 14px !important;
   text-transform: uppercase;
 }
+.play-storbtn {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.play-storbtn img {
+  width: 130px !important;
+}
+.downloadbtn-app a {
+  padding: 0 !important;
+  background: transparent !important;
+  margin-right: 0 !important;
+}
+.downloadbtn-app a img {
+  height: 41px;
+  width: 140px;
+}
 
 
 
 
+
+@media (min-width: 1200px) {
+   .slide-image {
+    height: 514px;
+   }
+}
 
 @media (max-width: 991px) {
   .header .navbar-nav li.downloadbtn a {
     width: 100%;
   }
+  .nav-item.downloadbtn-app {
+  text-align: center;
+  margin-top: 15px;
+}
 
   .header .navbar-nav li.downloadbtn a img {
   width: 100%;
@@ -1565,6 +1596,12 @@ padding: 8px 15px;outline: none !important;box-shadow: none !important;
 }
 .faster img {
   margin-bottom: 15px;
+}
+.play-storbtn img {
+  width: 90px !important;
+}
+.play-storbtn {
+  bottom: 1px;
 }
 
 }
