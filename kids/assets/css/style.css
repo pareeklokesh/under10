@@ -534,6 +534,18 @@ font-weight: 700;
   border-radius: 6px;
   height: 41px;
 }
+.play-storbtn {
+  position: absolute;
+  bottom: 24%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.play-storbtn img {
+  width: 130px !important;
+}
 
 
 
@@ -548,6 +560,12 @@ font-weight: 700;
 }
 
 @media (max-width: 767px) {
+  .play-storbtn img {
+  width: 90px !important;
+}
+.play-storbtn {
+  bottom: 5px;
+}
   #fooer {
   margin-left: 0 !important;
 }
