@@ -544,7 +544,7 @@ font-weight: 700;
   justify-content: center;
 }
 .play-storbtn img {
-  width: 130px !important;
+  width: 300px !important;
 }
 
 
@@ -561,7 +561,7 @@ font-weight: 700;
 
 @media (max-width: 767px) {
   .play-storbtn img {
-  width: 90px !important;
+  width: 180px !important;
 }
 .play-storbtn {
   bottom: 5px;
